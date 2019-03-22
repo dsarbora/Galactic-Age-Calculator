@@ -24,6 +24,12 @@ For the input **23** (years of age).
 |Jupiter |1            |6                 |
 
 ## Setup/Installation Requirements
+* _Download the repository from #####################_
+* _Download and install node.js with Node Package Manager._
+* _Navigate to the project directory in your command line._
+* _Use the command $ **npm install**_
+* _When necessary dependencies are finished loading, use the command $ **npm run build**_
+* _Finally, use the command $ **npm run start** to start the web server._
 
 ## Known bugs
 
@@ -36,6 +42,13 @@ For the input **23** (years of age).
 * CSS
 * Node.js
 * Node Package Manager
+* webpack v4.19.1
+* webpack-cli v2.0.9
+* css-loader v0.28.10
+* style-loader v0.20.2
+* html-webpack-plugin v3.0.6
+* clean-webpack-plugin v0.1.18
+
 #### License
 
 *MIT*
