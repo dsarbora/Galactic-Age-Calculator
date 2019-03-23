@@ -1,17 +1,17 @@
 export default class Person{
   constructor(birthdate){
     this.birthdate = birthdate;
-    this.age = parseInt((new Date()-birthdate)/31557600000);
-    this.yearsLeft = 100-this.age;
+    this.age = (new Date()-birthdate)/31557600000;
+    this.yearsLeft = 100-Math.round(this.age);
 
   }
 
   ageOnOtherPlanet(ratio){
-    return this.age/ratio;
+    return parseInt(this.age/ratio);
   }
 
   yearsLeftOnOtherPlanet(ratio){
-    return this.yearsLeft/ratio;
+    return parseInt(this.yearsLeft/ratio);
   }
 
 

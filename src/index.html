@@ -4,15 +4,50 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
-    <form id="ageForm">
-      <label for="day">Day:</label>
-      <input id="day" name="day" type="number" required>
-      <label for="month">Month:</label>
-      <input id="month" name="month" type="number" required>
-      <label for="year">Year</label>
-      <input id="year" name="year" type="number" required>
-      <button type="submit">Submit</button>
-    </form>
+  <body id="body">
+    <div class="container">
+      <h1>Element</h1>
+      <form id="ageForm">
+        <label for="day">Day:</label>
+        <input id="day" name="day" type="number" required>
+        <label for="month">Month:</label>
+        <input id="month" name="month" type="number" required>
+        <label for="year">Year</label>
+        <input id="year" name="year" type="number" required>
+        <button type="submit">Submit</button>
+      </form>
+
+      <table id="table">
+        <tr>
+          <td><strong>Planet</strong></td>
+          <td><strong>Current Age</strong></td>
+          <td><strong>Remaining Life Expectancy</strong></td>
+        </tr>
+        <tr>
+          <td>Mercury</td>
+          <td id="mercury"></td>
+          <td id="mercuryDeath"></td>
+        </tr>
+        <tr>
+          <td>Venus</td>
+          <td id="venus"></td>
+          <td id="venusDeath"></td>
+        </tr>
+        <tr>
+          <td>Earth</td>
+          <td id="earth"></td>
+          <td id="earthDeath"></td>
+        </tr>
+        <tr>
+          <td>Mars</td>
+          <td id="mars"></td>
+          <td id="marsDeath"></td>
+        </tr>
+        <tr>
+          <td>Jupiter</td>
+          <td id="jupiter"></td>
+          <td id="jupiterDeath"></td>
+        </tr>
+      </div>
   </body>
 </html>

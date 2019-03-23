@@ -1,3 +1,14 @@
-body{
-  background-color: #AAAAAA;
+td{
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+table{
+  margin-top: 40px;
+}
+
+#body{
+  background-color: #DCABAB;
 }
