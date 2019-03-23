@@ -1,11 +1,13 @@
 import SolarSystem from './../src/solar-system.js';
 import Planet from './../src/planet.js';
+import Person from './../src/person.js';
 
 describe('SolarSystem', function(){
-  let solarSystem;
+  let solarSystem = new SolarSystem();
+  solarSystem.createPlanets();
   beforeEach(function(){
-    solarSystem = new SolarSystem("hi");
-    solarSystem.createPlanets();
+
+
 
   });
   it('solar system is object', function(){
@@ -23,6 +25,13 @@ describe('SolarSystem', function(){
       expect(solarSystem.planets[i].name).toEqual(listOfPlanets[i]);
       expect(solarSystem.planets[i].ratio).toEqual(listOfRatios[i]);
     }
+  });
+
+  it('planet can eject from solar system', function(){
+    solarSystem.eject(solarSystem.planets[2]);
+    expect(solarSystem.planets.length).toEqual(4);
+    expect(solarSystem.planets[1].name).toEqual("venus");
+    expect(solarSystem.planets[2].name).toEqual("mars");
   });
 
 

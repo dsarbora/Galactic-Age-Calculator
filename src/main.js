@@ -24,10 +24,10 @@ $(document).ready(function(){
         $("#"+planet.name).text(person.ageOnOtherPlanet(planet.ratio));
         $("#"+planet.name+"Death").text(person.yearsLeftOnOtherPlanet(planet.ratio));
 
-      })
+      });
     }
     else{
-      alert("Please enter a valid date")
+      alert("Please enter a valid date");
     }
 
 

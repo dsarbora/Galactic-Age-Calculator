@@ -1,6 +1,9 @@
-import Planet from './../src/planet.js'
+import Planet from './../src/planet.js';
+import Person from './../src/person.js';
+import SolarSystem from './../src/solar-system.js'
 
 describe('Planet', function(){
+  let solarSystem;
   let planetName;
   let planetRatio;
   let planet;
@@ -8,8 +11,11 @@ describe('Planet', function(){
     planetName = "new Planet";
     planetRatio = 5;
     planet = new Planet(planetName, planetRatio);
+    solarSystem = new SolarSystem();
+    solarSystem.createPlanets();
 
   });
+
     it('planet constructor gives planet a name', function(){
       expect(planet.name).toEqual(planetName);
     });
@@ -17,10 +23,17 @@ describe('Planet', function(){
     it('planet constructor gives planet a ratio', function(){
       expect(planet.ratio).toEqual(planetRatio);
     });
+
     it('planet can have people', function(){
-      let date = new Date(1988, 9, 9);
+      const date = new Date(1988, 9, 9);
       let person = new Person(date);
       planet.addPerson(person);
       expect(planet.people[0]).toEqual(person);
-    })
+    });
+
+
+    it('planets are ordered by index', function(){
+      expect(solarSystem.planets[2].index).toEqual(2);
+    });
+
 });
