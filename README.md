@@ -13,7 +13,15 @@ Therefore, if a particular user is **52.8** years old on Mercury, they will be t
 Just as if a user is **20.997** years old on Earth, they are **20** years old.
 For example:
 
-For the input **23** (years of age).
+For the input:
+
+|input |    |
+|-----:|:---|
+|Day:  |23  |
+|Month:|5   |
+|Year: |1995|
+
+We expect the output:
 
 |Planet  |Current Age  |Years Until Death |
 |-------:|:-----------:|:-----------------|
