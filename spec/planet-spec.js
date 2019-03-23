@@ -17,4 +17,10 @@ describe('Planet', function(){
     it('planet constructor gives planet a ratio', function(){
       expect(planet.ratio).toEqual(planetRatio);
     });
+    it('planet can have people', function(){
+      let date = new Date(1988, 9, 9);
+      let person = new Person(date);
+      planet.addPerson(person);
+      expect(planet.people[0]).toEqual(person);
+    })
 });
