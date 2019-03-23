@@ -17,7 +17,13 @@ describe('SolarSystem', function(){
  });
 
   it('solar system has right planets', function(){
-    expect(solarSystem.planets[0].name).toEqual("mercury");
-
+    const listOfPlanets = ["mercury", "venus", "earth", "mars", "jupiter"];
+    const listOfRatios = [.24, .62, 1, 1.88, 11.86];
+    for(let i=0; i<solarSystem.planets.length; i++){
+      expect(solarSystem.planets[i].name).toEqual(listOfPlanets[i]);
+      expect(solarSystem.planets[i].ratio).toEqual(listOfRatios[i]);
+    }
   });
+
+
 })

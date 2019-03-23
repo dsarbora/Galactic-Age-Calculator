@@ -3,7 +3,7 @@ import Planet from './planet.js';
 export default class SolarSystem{
   constructor(planets){
     this.planets =[];
-  };
+  }
 
   createPlanets(){
     const planetFacts = [["mercury", .24], ["venus", .62], ["earth", 1], ["mars", 1.88], ["jupiter", 11.86]];
