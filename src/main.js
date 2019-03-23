@@ -2,8 +2,7 @@
 import $ from 'jquery';
 // import 'bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Person from './calculator.js';
-
+import Person from './person.js';
 $(document).ready(function(){
   $("#ageForm").submit(function(){
     event.preventDefault();
@@ -11,6 +10,7 @@ $(document).ready(function(){
     let month = $("#month").val();
     let year = $("#year").val();
     let birthdate = new Date(year, ++month, day);
+    let person = new Person(birthdate);
 
   });
 });

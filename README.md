@@ -43,11 +43,10 @@ For the input **23** (years of age).
 * Node.js
 * Node Package Manager
 * webpack v4.19.1
-* webpack-cli v2.0.9
-* css-loader v0.28.10
-* style-loader v0.20.2
 * html-webpack-plugin v3.0.6
 * clean-webpack-plugin v0.1.18
+* uglifyjs-webpack-plugin v1.2.2
+* ESLint v4.18.2
 
 #### License
 
