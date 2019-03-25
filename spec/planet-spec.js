@@ -16,24 +16,39 @@ describe('Planet', function(){
 
   });
 
-    it('planet constructor gives planet a name', function(){
+    it('Planet constructor gives planet a name.', function(){
       expect(planet.name).toEqual(planetName);
     });
 
-    it('planet constructor gives planet a ratio', function(){
+    it('Planet constructor gives planet a ratio.', function(){
       expect(planet.ratio).toEqual(planetRatio);
     });
 
-    it('planet can have people', function(){
+    it('Planet can have people.', function(){
       const date = new Date(1988, 9, 9);
       let person = new Person(date);
       planet.addPerson(person);
       expect(planet.people[0]).toEqual(person);
+      expect(planet.people.length).toEqual(1);
     });
 
+    it('Planet can lose people.', function(){
+      const date = new Date(1988, 9, 9);
+      let person = new Person(date);
+      planet.addPerson(person);
+      planet.removePerson(person);
+      expect(planet.people.length).toEqual(0);
+    })
 
-    it('planets are ordered by index', function(){
+
+    it('Planets are ordered by index.', function(){
       expect(solarSystem.planets[2].index).toEqual(2);
     });
 
+    it('getPopulation returns population.', function(){
+      const date = new Date(1988, 9, 9);
+      let person = new Person(date);
+      planet.addPerson(person);
+      expect(planet.getPopulation()).toEqual(1);
+    });
 });

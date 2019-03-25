@@ -11,6 +11,20 @@ export default class Planet{
     this.people.push(person);
   }
 
+  removePerson(person){
+    let counter=0;
+    while(this.people[counter]!=person)
+    {
+      counter++;
+    }
+    this.people.splice(counter, 1);
+  }
+
+  getPopulation()
+  {
+    return this.people.length;
+  }
+
   // setSolarSystem(solarSystem){
   //   if(this.solarSystem!=null){
   //     this.solarSystem.planets.splice(this.index, 1);

@@ -15,29 +15,29 @@ describe('Person', function(){
     date = new Date(year, month, day)
     me = new Person(date)
   });
-  it('constructor assigns age', function(){
+  it('Constructor assigns age.', function(){
     expect(parseInt(me.age)).toEqual(30);
   });
 
-  it('constructor assigns birthdate', function(){
+  it('Constructor assigns birthdate.', function(){
     expect(me.birthdate).toEqual(date);
   });
 
-  it('yearsLeft correctly calculates death date', function(){
+  it('yearsLeft correctly calculates death date.', function(){
     expect(me.yearsLeft).toEqual(70);
   });
 
-  it('ageOnOtherPlanet returns correct value', function(){
+  it('ageOnOtherPlanet returns correct value.', function(){
     let planet = new Planet("planet x", 2);
     expect(me.ageOnOtherPlanet(planet.ratio)).toEqual(15);
   });
 
-  it('yearsLeftOnOtherPlanet returns correct value', function(){
+  it('yearsLeftOnOtherPlanet returns correct value.', function(){
     let planet = new Planet("planet x", 2);
     expect(me.yearsLeftOnOtherPlanet(planet.ratio)).toEqual(35);
   });
 
-  it('person can have a home planet', function(){
+  it('Person can have a home planet.', function(){
     let solarSystem = new SolarSystem();
     solarSystem.createPlanets();
     let earth = solarSystem.planets[2];

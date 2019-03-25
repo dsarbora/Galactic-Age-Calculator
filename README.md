@@ -1,6 +1,6 @@
 ## Galactic Age Calculator
 #### By Dave Sarbora
-####To calculate your age on other planets.
+#### To calculate your age on other planets.
 ## Description
 
 This application takes a user's age and determines how old they would be on other planets in the solar system. Additionally, it will tell you how much longer you have left to live based on a preset oversimplified and unrealistic life expectancy of 100 years.
@@ -50,11 +50,9 @@ We expect the output:
 * CSS
 * Node.js
 * Node Package Manager
-* webpack v4.19.1
-* html-webpack-plugin v3.0.6
-* clean-webpack-plugin v0.1.18
-* uglifyjs-webpack-plugin v1.2.2
-* ESLint v4.18.2
+* Webpack
+* UglifyJs
+* ESLint
 
 #### License
 

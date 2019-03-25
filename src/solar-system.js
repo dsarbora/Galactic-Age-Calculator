@@ -1,5 +1,5 @@
 import Planet from './planet.js';
-
+// Unnecessary classes like this one were for more practice testing.
 export default class SolarSystem{
   constructor(planets){
     this.planets =[];
@@ -13,8 +13,16 @@ export default class SolarSystem{
       newPlanet.index=this.planets.length;
       this.planets.push(newPlanet);
     }
-  };
+  }
+  clearAll(){
+    this.planets = [];
+  }
 
+  getPlanet(planet){
+    planet.index = this.planets.length;
+    this.planets.push(planet);
+  }
+  //  Allows for
   eject(planet){
     this.planets.splice(planet.index, 1);
   }
