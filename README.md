@@ -32,16 +32,21 @@ We expect the output:
 |Jupiter |1            |6                 |
 
 ## Setup/Installation Requirements
-* _Download the repository from #####################_
-* _Download and install node.js with Node Package Manager._
+* _Download the repository from [https://github.com/dsarbora/Galactic-Age-Calculator](https://github.com/dsarbora/Galactic-Age-Calculator)_
+* _Download and install node.js and Node Package Manager._
 * _Navigate to the project directory in your command line._
 * _Use the command $ **npm install**_
 * _When necessary dependencies are finished loading, use the command $ **npm run build**_
 * _Finally, use the command $ **npm run start** to start the web server._
 
 ## Known bugs
+* No known bugs at this time.
+
+## Unused classes
+There are several unused classes and functions in the code. The goal of this project was to successfully set up and write a program using JSON and NPM, and to become familiar with unit testing in JavaScript. The classes exist as test dummy material.
 
 ## Support and Contact Details
+Contact me at [dsarbora@gmail.com](mailto:dsarbora@gmail.com)
 
 ## Technologies Used
 * Atom
